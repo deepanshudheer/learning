@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <stdlib.h>
 
-char square[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+char square[10] = {'o', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
 int checkWin()
 {
@@ -73,43 +73,43 @@ int main()
     {
         drawBoard();
         player = (player % 2) ? 1 : 2;
-        printf("Player %d enter choice: ", player);
+        (player == 1) ? printf("Player 1 enter choice (X): ") : printf("Player 2 enter choice (O): ");
         scanf("%d", &choice);
         mark = (player == 1) ? 'X' : 'O';
 
-        if (choice == '1' && square[1] == '1')
+        if (choice == 1 && square[1] == '1')
         {
             square[1] = mark;
         }
-        else if (choice == '2' && square[2] == '2')
+        else if (choice == 2 && square[2] == '2')
         {
             square[2] = mark;
         }
-        else if (choice == '3' && square[2] == '3')
+        else if (choice == 3 && square[3] == '3')
         {
             square[3] = mark;
         }
-        else if (choice == '4' && square[2] == '2')
+        else if (choice == 4 && square[4] == '4')
         {
             square[4] = mark;
         }
-        else if (choice == '5' && square[2] == '2')
+        else if (choice == 5 && square[5] == '5')
         {
             square[5] = mark;
         }
-        else if (choice == '6' && square[2] == '2')
+        else if (choice == 6 && square[6] == '6')
         {
             square[6] = mark;
         }
-        else if (choice == '7' && square[2] == '2')
+        else if (choice == 7 && square[7] == '7')
         {
             square[7] = mark;
         }
-        else if (choice == '8' && square[2] == '2')
+        else if (choice == 8 && square[8] == '8')
         {
             square[8] = mark;
         }
-        else if (choice == '9' && square[2] == '2')
+        else if (choice == 9 && square[9] == '9')
         {
             square[9] = mark;
         }
@@ -126,12 +126,13 @@ int main()
     drawBoard();
     if (i == 1)
     {
-        printf("Player %d won", --player);
+        printf("Player %d won!", --player);
     }
     else
     {
         printf("Game draw!");
     }
+    printf("\nPress any key to exit...");
     getch();
     return 0;
 }
