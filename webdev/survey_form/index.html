@@ -8,6 +8,26 @@
     <h1 id="title">Survey Form</h1>
     <p id="description">This is a survey form</p>
     <form id="survey-form">
-    <label>Enter your name: <input id="name" type="text" required>
+    <label id="name-label">Enter your name: <input id="name" type="text" placeholder="John Doe"required>
+    <label id="email-label">Enter your email: <input id="email" type="email" placeholder="example@gmail.com" required>
+    <label id="number-label">Enter your number: <input id="number" type="number" min="6" max="10" placeholder="98601234" required>
+    <label>Select your car type: 
+      <select id="dropdown">
+        <option>(select one)
+        <option>Compact
+        <option>Sedan
+      </select>
+    </label>
+    <label>Choose an option: </label>
+    <label>Male <input type="radio" name="group1" value="m"</label>
+    <label>Female <input type="radio" name="group1" value="f"</label>
+    <label>Cars you've owned: </label>
+    <label>Tesla <input type="checkbox" value="group2"></label>
+    <label>Hyundai <input type="checkbox" value="group2"></label>
+    <label>BMW <input type="checkbox" value="group2"></label>
+    <label>None <input type="checkbox" value="group2"></label>
+    <label>Feedback if any: </label>
+    <textarea rows="3" cols="10"></textarea>
+    <input type="submit" id="submit">
   </main>
 </html>
