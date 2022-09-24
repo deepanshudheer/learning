@@ -1,0 +1,25 @@
+html, body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.main-section {
+  position: relative;
+  left: 200px;
+}
+
+.ul {
+  position: relative;
+  left: 35px;
+}
+
+.logo {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  width: 100px;
+  border: 3px solid #6441A5;
+}
